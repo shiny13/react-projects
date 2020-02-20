@@ -1,0 +1,22 @@
+.input-boxes {
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.entry {
+    width: 300px;
+    margin: 20px;
+
+}
+
+.addBorder {
+    border: solid 2px darkgrey;
+}
+
+.colHeaderBackground {
+    background-color: lightgrey;
+}
+.colBackground {
+    background-color: lightsalmon;
+}
