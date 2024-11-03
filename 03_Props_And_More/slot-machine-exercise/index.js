@@ -7,6 +7,7 @@ class App extends React.Component {
 
         return (
             <div>
+                <h1>Slot machines!</h1>
                 <Machine 
                     s1={getItem()}
                     s2={getItem()}
