@@ -1,17 +1,13 @@
 class Machine extends React.Component {
     render() {
         let msg;
-        if (this.props.s1 === this.props.s2 && this.props.s2 === this.props.s3) {
-            msg = 'You win!';
-        } else {
-            msg = 'You lose!';
-        }
-        console.log(this.props, msg)
+        const {s1, s2, s3} = this.props;
+        const winner = (s1 === s2) && (s2 === s3);
 
         return (
             <div>
-                <p>{this.props.s1} {this.props.s2} {this.props.s3}</p>
-                <p>{msg}</p>
+                <p>{s1} {s2} {s3}</p>
+                <p>{winner ? "You win!" : "You lose!"}</p>
             </div>
         );
     }
