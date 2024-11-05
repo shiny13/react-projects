@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { choice, remove } from './helpers'
+import foods from './foods';
 
 function App() {
+  let fruit = choice(foods);
+  console.log(`I'd like one ${fruit}, please.`);
+  let remaining = remove(foods, fruit);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +23,10 @@ function App() {
         >
           Learn React
         </a>
+        <p>
+          I would like one {fruit}, please. <br />
+          There are {remaining.length} remaining fruits left in the store.
+        </p>
       </header>
     </div>
   );
