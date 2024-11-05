@@ -13,6 +13,12 @@
 }
 
 .Pokecard-image {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.Pokecard-image {
     display: flex;
     justify-content: center;
     align-items: center;
