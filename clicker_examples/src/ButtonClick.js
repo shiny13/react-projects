@@ -8,6 +8,11 @@ class ButtonClick extends Component {
         }
         this.handleClicked = this.handleClicked.bind(this);
     }
+
+    // state = {
+    //     clicked: false
+    // }
+
     handleClicked(e) {
         this.setState({clicked: true});
     }
